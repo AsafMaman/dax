@@ -1,0 +1,31 @@
+.dax-container {
+  display: grid;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: 1px solid green;
+}
+
+@media screen and (min-width: 576px) {
+  .dax-container {
+    width: 570px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .dax-container {
+    width: 762px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .dax-container {
+    width: 986px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .dax-container {
+    width: 100%;
+  }
+}

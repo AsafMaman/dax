@@ -1,0 +1,35 @@
+<div class="login container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-lg-4 col-xl-3">
+      <app-login-form (submited)="onSubmit($event)" class="row justify-content-md-center"></app-login-form>
+    </div>
+    <div class="col-12">
+      <div [hidden]="(loading$ | async) == false">Loading...</div>
+    </div>
+  </div>
+  <!-- <div class="row">
+    <div class="col-12">
+      <div>loading</div>
+      <div [hidden]="(loading$ | async) == false">Loading...</div>
+    </div>
+  </div>
+</div> -->
+
+  <!-- <div class="login">
+  <app-login-form (submited)="onSubmit($event)" class="login-form"></app-login-form>
+</div>
+
+<div class="dax-container login">
+  <div class="login-form-container">
+    <app-login-form (submited)="onSubmit($event)" class="login-form"></app-login-form>
+  </div>
+</div>
+
+<!-- <p>
+  login container
+</p>
+<div>
+  <app-login-form (submited)="onSubmit($event)"></app-login-form>
+  <div [hidden]="(loading$ | async) == false">Loading...</div>
+  <div>Loading state:{{loading$ | async}}</div>
+</div> -->

@@ -1,0 +1,18 @@
+<div class="card text-white o-hidden h-100" [ngClass]="backgroudColor">
+  <div class="card-body">
+    <div class="card-body-icon">
+      <i class="fa fa-fw fa-list"></i>
+    </div>
+    <div class="mr-5">
+      <ng-content select="[body]"></ng-content>
+    </div>
+  </div>
+  <a class="card-footer text-white clearfix small z-1">
+    <span class="float-left" (click)="footerClicked()">
+      <ng-content select="[footer]"></ng-content>
+    </span>
+    <span class="float-right">
+      <i class="fa fa-angle-right"></i>
+    </span>
+  </a>
+</div>
